@@ -7,7 +7,7 @@ $(document).ready(function(){
     //console.log("Posts array received", posts_array);
     for(var i = 0; i < users_array.length; i++){
       var user = users_array[i]; //we are storing the posts in a temp variable for easy access, we don't have to write posts_array[i] everytime
-      $(container_users).append("<div class='user'>" + (i+1) + ". " + "<a href='#' data-item-id='" + user.id + "'>" + user.title + "</a></div>"); //There is not point of doing that, we can do it with one string.ok
+      $(container_users).append("<div class='user'>" + (i+1) + ". " + "<a href='#' data-item-id='" + user.id + "'>" + user.name + "</a></div>"); //There is not point of doing that, we can do it with one string.ok
       //here in the link we'll add the id as a data attribute so we can access it later.
     }
     console.log("Finished adding users to the page.");
